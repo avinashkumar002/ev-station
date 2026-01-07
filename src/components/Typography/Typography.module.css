@@ -1,0 +1,173 @@
+/* H1 */
+.h1-txt {
+  font-size: 48px;
+  line-height: 50px;
+  font-family: var(--font-poppins);
+}
+
+/* H2 */
+.h2-txt {
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: -0.01rem;
+  font-family: var(--font-poppins);
+}
+
+/* H3 */
+.h3-txt {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0;
+  font-family: var(--font-poppins);
+}
+
+/* H4 */
+.h4-txt {
+  font-size: 22px;
+  letter-spacing: 0;
+  font-family: var(--font-inter);
+}
+
+/* Body */
+.body-txt {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-family: var(--font-inter);
+}
+
+/* Paragraph */
+.para-txt {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-family: var(--font-inter);
+}
+
+/* Chip */
+.chip-txt {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-family: var(--font-inter);
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+/* ----------------------
+   ≤ 1440px (Large Desktop)
+-----------------------*/
+@media (max-width: 1440px) {
+  .h1-txt {
+    font-size: 40px;
+  }
+
+  .h2-txt {
+    font-size: 36px;
+  }
+
+  .h3-txt {
+    font-size: 24px;
+  }
+
+  .h4-txt {
+    font-size: 18px;
+  }
+
+  .body-txt {
+    font-size: 18px;
+  }
+
+  .para-txt {
+    font-size: 16px;
+  }
+
+  .chip-txt {
+    font-size: 14px;
+  }
+}
+
+/* ----------------------
+   ≤ 768px (Tablet)
+-----------------------*/
+@media (max-width: 768px) {
+  .h1-txt {
+    font-size: 32px;
+    line-height: 37.5px;
+  }
+
+  .h2-txt {
+    font-size: 24px;
+  }
+
+  .h3-txt {
+    font-size: 20px;
+  }
+
+  .h4-txt {
+    font-size: 18px;
+  }
+
+  .body-txt {
+    font-size: 16px;
+  }
+
+  .para-txt {
+    font-size: 14px;
+  }
+
+  .chip-txt {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------
+   ≤ 392px (Mobile)
+-----------------------*/
+@media (max-width: 392px) {
+  .h1-txt {
+    font-size: 30px;
+  }
+
+  .h2-txt {
+    font-size: 24px;
+  }
+
+  .h3-txt {
+    font-size: 18px;
+  }
+
+  .h4-txt {
+    font-size: 16px;
+  }
+
+  .body-txt {
+    font-size: 14px;
+  }
+
+  .para-txt {
+    font-size: 14px;
+  }
+
+  .chip-txt {
+    font-size: 12px;
+  }
+}
