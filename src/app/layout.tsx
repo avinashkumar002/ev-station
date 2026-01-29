@@ -112,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         <Header />
-        <div className="h-[72px] lg:h-22 w-full"></div>
+        <div className="h-[72px] lg:h-[74px] w-full"></div>
         {children}
         <Footer />
       </body>
