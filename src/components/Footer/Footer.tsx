@@ -2,7 +2,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import Container from "../Container/Container";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 import Image from "next/image";
 import globe from "./footer-img/globe.svg"
 import twitter from "./footer-img/twitter.svg"

@@ -3,7 +3,7 @@ import Container from "@/components/Container/Container";
 import AnimatedCarSection from "@/components/molecules/AnimatedCarSection";
 import Image from "next/image";
 import parkedCar from "@/assets/svgs/parked-car.svg"
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 import Link from "next/link";
 import Button from "@/components/Button/Button";
 

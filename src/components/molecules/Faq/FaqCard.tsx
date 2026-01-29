@@ -1,7 +1,7 @@
 "use client";
 
 import ChevronDown from "@/assets/svgs/ChevronDown";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 
 interface FaqCardProps {
     question: string;

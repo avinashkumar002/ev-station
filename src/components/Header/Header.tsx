@@ -8,7 +8,7 @@ import world from "./header-img/world.svg";
 import ham from "./header-img/ham.svg";
 import cross from "./header-img/cross.svg";
 import Container from "@/components/Container/Container";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 import Button from "../Button/Button";
 import useScrollTo from "@/hooks/useScrollTo";
 

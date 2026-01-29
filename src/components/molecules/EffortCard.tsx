@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 
 interface EffortCardProps {
   number: string;

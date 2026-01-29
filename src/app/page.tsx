@@ -1,6 +1,6 @@
 "use client";
 import Container from "@/components/Container/Container";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 import { FC, useState, Suspense } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";

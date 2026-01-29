@@ -2,7 +2,7 @@
 
 import Comma from "@/assets/svgs/Comma";
 import Star from "@/assets/svgs/Star";
-import Typography from "@/components/Typography/Typograpghy";
+import Typography from "@/components/Typography/Typography";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 interface TestimonialCardProps {
