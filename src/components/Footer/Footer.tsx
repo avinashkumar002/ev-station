@@ -1,4 +1,3 @@
-"use client";
 import { FC } from "react";
 import Link from "next/link";
 import Container from "../Container/Container";
@@ -8,12 +7,10 @@ import globe from "./footer-img/globe.svg"
 import twitter from "./footer-img/twitter.svg"
 import fb from "./footer-img/fb.svg"
 import insta from "./footer-img/insta.svg"
-import logo from "./footer-img/footer-logo.svg"
-
-import useScrollTo from "@/hooks/useScrollTo";
+import logo from "../Header/header-img/header-logo.png";
+import ScrollNavLink from "@/components/ScrollNavLink/ScrollNavLink";
 
 const Footer: FC = () => {
-    const scrollTo = useScrollTo();
     return (
         <footer className="w-full">
             <div className="flex flex-col">
@@ -48,16 +45,16 @@ const Footer: FC = () => {
                                         </Typography>
                                     </div>
                                     <div className="flex flex-col gap-3">
-                                        <div onClick={() => scrollTo("how-it-works")}>
-                                            <Typography variant="para" weight={500} className="text-[#2B2B2B] cursor-pointer">
-                                                How it Works
-                                            </Typography>
-                                        </div>
-                                        <div onClick={() => scrollTo("features-view")}>
-                                            <Typography variant="para" weight={500} className="text-[#2B2B2B] cursor-pointer">
-                                                Features
-                                            </Typography>
-                                        </div>
+                                        <ScrollNavLink
+                                            label="How it Works"
+                                            target="how-it-works"
+                                            typographyClassName="text-[#2B2B2B] cursor-pointer"
+                                        />
+                                        <ScrollNavLink
+                                            label="Features"
+                                            target="features-view"
+                                            typographyClassName="text-[#2B2B2B] cursor-pointer"
+                                        />
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-5">
@@ -98,7 +95,7 @@ const Footer: FC = () => {
                         <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
                             <div className="flex gap-8 lg:gap-10">
                                 <Typography variant="para" weight={600} className="text-[#132457]">
-                                    © 2025 Parkly
+                                    © 2025 ChargeMate
                                 </Typography>
 
                                 <Link href="">

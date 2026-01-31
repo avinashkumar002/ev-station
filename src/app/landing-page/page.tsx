@@ -151,7 +151,7 @@ export default function Home() {
       stars: 5,
       title: "“Guaranteed Parking, Stress-Free Commute.”",
       comment:
-        "Finding parking downtown was a headache. Parkly changed that. I pre-book a spot near my office every morning, saving time and stress. It's a game-changer for my commute.",
+        "Finding parking downtown was a headache. ChargeMate changed that. I pre-book a spot near my office every morning, saving time and stress. It's a game-changer for my commute.",
       author: "– Sarah M., Daily Commuter",
     },
     {
@@ -159,7 +159,7 @@ export default function Home() {
       stars: 4,
       title: "“Hassle-Free Event Access, Secure & Close Parking.”",
       comment:
-        "Concerts used to mean parking far away. With Parkly, I found a space two blocks from the venue. I pre-booked it, and arrival was seamless with the digital pass. It took the hassle out of event day, letting us enjoy the show, knowing our car was secure.",
+        "Concerts used to mean parking far away. With ChargeMate, I found a space two blocks from the venue. I pre-booked it, and arrival was seamless with the digital pass. It took the hassle out of event day, letting us enjoy the show, knowing our car was secure.",
       author: "– Mark K., Festival Attendee",
     },
     {
@@ -191,7 +191,7 @@ export default function Home() {
       stars: 5,
       title: "Stress-Free Event Days!",
       comment:
-        "Parkly takes all the stress out of parking. I can focus on enjoying the event knowing my car is safe and close by.The app shows real-time availability, and the digital pass makes entry super quick. Parking has never been easier.",
+        "ChargeMate takes all the stress out of parking. I can focus on enjoying the event knowing my car is safe and close by.The app shows real-time availability, and the digital pass makes entry super quick. Parking has never been easier.",
       author: "– Olivia T., Attendee",
     },
   ];
@@ -217,7 +217,7 @@ export default function Home() {
                   Find Smart, Secure Parking — Anytime,<span className="text-blue-500"> Anywhere.</span>
                 </Typography>
                 <Typography variant="body" weight={400} className="text-black-900 text-center">
-                  Parkly connects <b> Drivers, Hosts, and Event-Goers </b> with verified, private parking spaces nearby. Stop circling. Save time and money.
+                  ChargeMate connects <b> Drivers, Hosts, and Event-Goers </b> with verified, private parking spaces nearby. Stop circling. Save time and money.
                 </Typography>
               </div>
               <div className="flex gap-2.5 justify-center md:justify-start md:gap-6 flex-wrap">
@@ -268,7 +268,7 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Parkly Makes Parking Effortless */}
+      {/* ChargeMate Makes Parking Effortless */}
       <section id="how-it-works" className="scroll-mt-15">
         <Container>
           <div className="flex flex-col gap-[52px] md:gap-15 pt-8 pb-11 md:py-[70px] ">
@@ -281,7 +281,7 @@ export default function Home() {
                   </Typography>
                 </div>
                 <Typography variant="h2" weight={600} lineHeight={isMd ? 45 : 36} className="text-[#0A0A0A]">
-                  Parkly Makes Parking Effortless
+                  ChargeMate Makes Parking Effortless
                 </Typography>
               </div>
 
@@ -620,7 +620,7 @@ export default function Home() {
                     Get the App. Park Smarter.
                   </Typography>
                   <Typography variant="body" weight={400} lineHeight={isMd ? 28 : 22} className="text-[#FFFFFF]">
-                    Experience Parkly with Saved Places and mobile payments. Download the top app for verified parking.
+                    Experience ChargeMate with Saved Places and mobile payments. Download the top app for verified parking.
                   </Typography>
                 </div>
               </div>

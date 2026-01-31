@@ -26,10 +26,10 @@ export const ThankYouPage: FC = () => {
 
                         <div className="flex flex-col gap-4">
                             <Typography variant="h1" weight={700} letterSpacing={0.01} className="text-black-900 text-center">
-                                <span className="text-blue-500"> You’re in.</span> Thanks for joining the Parkly waitlist.
+                                <span className="text-blue-500"> You’re in.</span> Thanks for joining the ChargeMate waitlist.
                             </Typography>
                             <Typography variant="h4" weight={400} lineHeight={28} className="text-black-900 text-center">
-                                Parkly helps you find verified, private parking — fast, safe, and hassle-free.We’ll send early access details soon.
+                                ChargeMate helps you find verified, private parking — fast, safe, and hassle-free.We’ll send early access details soon.
                             </Typography>
 
                         </div>

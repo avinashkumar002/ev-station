@@ -19,8 +19,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Parkly - Find Smart, Secure Parking | Verified Spaces & Hosting",
-    template: "%s | Parkly",
+    default: "ChargeMate - Find Smart, Secure Parking | Verified Spaces & Hosting",
+    template: "%s | ChargeMate",
   },
   description: "Find verified parking spaces or list your spot to earn. Smart, secure parking with real-time availability and instant booking.",
   keywords: [
@@ -37,31 +37,31 @@ export const metadata: Metadata = {
     "host parking space",
     "earn from parking",
   ],
-  authors: [{ name: "Parkly Team" }],
-  creator: "Parkly",
-  metadataBase: new URL("https://parklyco.com"),
+  authors: [{ name: "ChargeMate Team" }],
+  creator: "ChargeMate",
+  metadataBase: new URL("https://ChargeMateco.com"),
   alternates: {
-    canonical: "https://parklyco.com/",
+    canonical: "https://ChargeMateco.com/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Parkly",
-    title: "Parkly - Find Smart, Secure Parking",
+    siteName: "ChargeMate",
+    title: "ChargeMate - Find Smart, Secure Parking",
     description: "Connect with verified parking spaces. Stop circling. Save time and money.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Parkly - Smart Parking Platform",
+        alt: "ChargeMate - Smart Parking Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@parkly",
-    title: "Parkly - Find Smart, Secure Parking",
+    creator: "@ChargeMate",
+    title: "ChargeMate - Find Smart, Secure Parking",
     description: "Connect with verified parking spaces nearby.",
     images: ["/og-image.jpg"],
   },

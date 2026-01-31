@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Typography from "@/components/Typography/Typography";
 import Button from "../Button/Button";
-import ScrollNavLink from "./ScrollNavLink";
+import ScrollNavLink from "../ScrollNavLink/ScrollNavLink";
 import ham from "./header-img/ham.svg";
 import cross from "./header-img/cross.svg";
 import world from "./header-img/world.svg";
@@ -36,7 +36,7 @@ export default function MobileMenuToggle({ logo, navItems }: MobileMenuTogglePro
       >
         <div className="flex justify-between p-4 backdrop-blur-[20px]">
           <Link href="/" className="flex items-center gap-2 relative w-[126px] h-[38px]">
-            <Image src={logo} alt="Parkly Logo" fill className="object-contain" sizes="100%" priority />
+            <Image src={logo} alt="ChargeMate Logo" fill className="object-contain" sizes="100%" priority />
           </Link>
 
           <button onClick={() => setIsOpen(false)}>

@@ -4,7 +4,7 @@ import logo from "./header-img/header-logo.png";
 import world from "./header-img/world.svg";
 import Container from "@/components/Container/Container";
 import Typography from "@/components/Typography/Typography";
-import ScrollNavLink from "./ScrollNavLink";
+import ScrollNavLink from "../ScrollNavLink/ScrollNavLink";
 import MobileMenuToggle from "./MobileMenuToggle";
 import ScrollButton from "./ScrollButton";
 
@@ -22,7 +22,7 @@ export default function Header() {
                     {/* Desktop Header */}
                     <div className="hidden lg:flex items-center justify-between py-2">
                         <Link href="/" className="flex items-center gap-2 relative w-[166px] h-[50px]">
-                            <Image src={logo} alt="Parkly Logo" fill className="object-contain" sizes="100%" priority />
+                            <Image src={logo} alt="ChargeMate Logo" fill className="object-contain" sizes="100%" priority />
                         </Link>
 
                         <div className="flex gap-10">
@@ -64,7 +64,7 @@ export default function Header() {
                     {/* Mobile Header */}
                     <div className="flex lg:hidden items-center justify-between py-4">
                         <Link href="/" className="flex items-center gap-2 relative w-[126px] h-[38px]">
-                            <Image src={logo} alt="Parkly Logo" fill className="object-contain" sizes="100%" priority />
+                            <Image src={logo} alt="ChargeMate Logo" fill className="object-contain" sizes="100%" priority />
                         </Link>
 
                         <MobileMenuToggle logo={logo} navItems={NAV_ITEMS} />
