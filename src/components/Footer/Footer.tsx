@@ -30,10 +30,10 @@ const Footer: FC = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <Typography variant="body" weight={600} lineHeight={34} letterSpacing={0.01} className="text-[#132457]">
-                                        Find your spot before the chaos.
+                                        Claim your charging spot first.
                                     </Typography>
                                     <Typography variant="para" weight={500} className="text-[#434343]">
-                                        Smart, verified parking from locals near stadiums and events
+                                        Smart, verified charging stations from locals near events.
                                     </Typography>
                                 </div>
                             </div>

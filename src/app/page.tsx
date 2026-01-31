@@ -47,6 +47,9 @@ import RatingStars from "@/assets/svgs/RatingStars";
 import glassHost from "@/assets/svgs/glass-host.svg";
 import bookHost from "@/assets/svgs/book-host.svg";
 import paidHost from "@/assets/svgs/paid-host.svg";
+import Verified from "@/assets/svgs/Verified";
+import Guaranteed from "@/assets/svgs/Guaranteed";
+import Effortless from "@/assets/svgs/Effortless";
 
 
 const WaitlistPage: FC = () => {
@@ -269,58 +272,78 @@ const WaitlistPage: FC = () => {
             </Suspense>
 
             {/* Hero Section */}
-            <section className="relative bg-[#ffffff] bg-cover bg-center bg-no-repeat">
+            <section className="relative">
                 <Container>
-                    <div className="find-container flex gap-8 py-8 md:pt-5 md:pb-0 ">
-                        <div className=" w-full flex flex-col justify-center gap-6 md:gap-8">
-                            <div className="flex flex-col gap-4">
-                                <Typography variant="h1" weight={700} letterSpacing={0.01} className="text-black-900 text-center md:text-left">
+                    <div className="flex flex-col gap-6 md:gap-8 py-8 md:py-[84px] max-w-[600px] mx-auto ">
+                        <div className="flex flex-col gap-4 md:gap-6">
+                            <div className="flex flex-col gap-2 md:gap-4">
+                                <Typography variant="h1" weight={700} letterSpacing={0.01} className="text-black-900 text-center">
                                     Find Smart, Reliable EV Charging — Anytime, <span className="text-lime-900"> Anywhere.</span>
                                 </Typography>
-                                <Typography variant="body" weight={400} lineHeight={isMd ? 28 : 24} className="text-black-900 text-center md:text-left">
+                                <Typography variant="body" weight={400} lineHeight={isMd ? 28 : 24} className="text-black-900 text-center">
                                     ChargeMate connects <b> EV Drivers and Charger Hosts</b> with verified, private EV charging points nearby. No more range anxiety. Save time and power.
                                 </Typography>
                             </div>
-                            <div className="flex flex-col gap-3">
-                                <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center ">
-                                    <div className="w-full md:w-auto">
-                                        <Button
-                                            text="Join as a Charger Host"
-                                            onClick={() => handleScrollAndSelect("host")}
-                                            variant="lg"
-                                            bg="#365314"
-                                            color="#FFFFFF"
-                                            hoverBg="#101010"
-                                            boxShadow="1px 2px 24px 0px #13245733"
-                                            className="w-full md:w-auto"
-                                        />
-                                    </div>
-                                    <div className="w-full md:w-auto">
-                                        <Button
-                                            text="Join as a Driver"
-                                            onClick={() => handleScrollAndSelect("driver")}
-                                            variant="lg"
-                                            bg="#d9f99d"
-                                            color="#1a2e05"
-                                            hoverBg="#bef264"
-                                            className="w-full md:w-auto"
-                                        />
-                                    </div>
+                            <div className="flex gap-2.5 justify-center md:justify-start md:gap-6 flex-wrap">
+                                <div className="flex gap-2 items-center bg-[#d9f99d] py-1.5 px-4 rounded-3xl">
+                                    <Verified />
+                                    <Typography
+                                        variant="chip"
+                                        weight={600}
+                                        lineHeight={20}
+                                        className="text-[#1a2e05]"
+                                    >
+                                        Verified Spots
+                                    </Typography>
                                 </div>
-                                {/* <Typography variant="para" weight={500} lineHeight={isMd ? 24 : 20} className="text-black-900 italic">
-                                    Launching nationwide soon
-                                </Typography> */}
+                                <div className="flex gap-2 items-center bg-[#d9f99d] py-1.5 px-4 rounded-3xl">
+                                    <Guaranteed />
+                                    <Typography
+                                        variant="chip"
+                                        weight={600}
+                                        lineHeight={20}
+                                        className="text-[#1a2e05]"
+                                    >
+                                        Guaranteed Parking
+                                    </Typography>
+                                </div>
+
+                                <div className="flex gap-2 items-center bg-[#d9f99d] py-1.5 px-4 rounded-3xl">
+                                    <Effortless />
+                                    <Typography
+                                        variant="chip"
+                                        weight={600}
+                                        lineHeight={20}
+                                        className="text-[#1a2e05]"
+                                    >
+                                        Effortless Earnings
+                                    </Typography>
+                                </div>
+
                             </div>
                         </div>
-                        <div className="hidden md:block w-full max-w-[524px]">
-                            <div className="flex justify-center relative w-full h-full min-h-[450px] ">
-                                <Image
-                                    src={device}
-                                    alt="world"
-                                    fill
-                                    className="object-contain"
-                                    sizes="100%"
-                                    priority
+                        <div className="flex flex-col md:flex-row gap-3 md:gap-6 items-center justify-center">
+                            <div className="w-full md:w-auto">
+                                <Button
+                                    text="Join as a Charger Host"
+                                    onClick={() => handleScrollAndSelect("host")}
+                                    variant="lg"
+                                    bg="#365314"
+                                    color="#FFFFFF"
+                                    hoverBg="#101010"
+                                    boxShadow="1px 2px 24px 0px #13245733"
+                                    className="w-full md:w-auto"
+                                />
+                            </div>
+                            <div className="w-full md:w-auto">
+                                <Button
+                                    text="Join as a Driver"
+                                    onClick={() => handleScrollAndSelect("driver")}
+                                    variant="lg"
+                                    bg="#d9f99d"
+                                    color="#1a2e05"
+                                    hoverBg="#bef264"
+                                    className="w-full md:w-auto"
                                 />
                             </div>
                         </div>
@@ -534,7 +557,7 @@ const WaitlistPage: FC = () => {
                                         boxShadow="1px 2px 24px 0px #13245733"
                                         onClick={handleToggleFaqs}
                                     />
-                                </div>  
+                                </div>
                             </div>
                             <div className="flex flex-col gap-6 max-w-[564px] ">
                                 <FaqList showCount={showAll ? undefined : initialCount} />
@@ -542,7 +565,7 @@ const WaitlistPage: FC = () => {
                                     <Button
                                         text={showAll ? "View Less" : "View More Questions"}
                                         variant="lg"
-                                        bg="#2C7FFF"
+                                        bg="#365314"
                                         color="#FFFFFF"
                                         hoverBg="#101010"
                                         boxShadow="1px 2px 24px 0px #13245733"
@@ -561,11 +584,17 @@ const WaitlistPage: FC = () => {
                     <div className="feature-content pt-8 md:pt-[70px] flex flex-col gap-8 md:gap-15 ">
                         <div className="flex flex-col gap-2 lg:gap-3 items-center pr-6 md:pr-0">
                             <div className="flex flex-col gap-1 lg:gap-2 items-center ">
-                                <div className="w-max py-1.5 px-3 bg-[#C5E3FF] backdrop-blur-sm rounded-3xl">
-                                    <Typography variant="chip" weight={600} lineHeight={isMd ? 20 : 16} className="text-blue-500">
+                                <div className="w-max py-1.5 px-3 bg-[#d9f99d] backdrop-blur-sm rounded-3xl">
+                                    <Typography
+                                        variant="chip"
+                                        weight={600}
+                                        lineHeight={isMd ? 20 : 16}
+                                        className="text-[#1a2e05]"
+                                    >
                                         KEY FEATURES
                                     </Typography>
                                 </div>
+
                                 <Typography variant="h2" weight={600} lineHeight={isMd ? 45 : 36} className="text-black-900 text-center">
                                     Smart. Verified. Effortless.
                                 </Typography>
@@ -687,13 +716,13 @@ const WaitlistPage: FC = () => {
                             </div>
                             <div className="flex flex-col gap-4 lg:gap-5 items-center justify-center pr-6">
                                 <h4 className="font-semibold text-[20px] leading-8 md:text-[30px] md:leading-[37.5px] tracking-[1%] text-center text-black-900">
-                                    Find your next parking spot the smarter way.
+                                    Find your next charging station the smarter way.
                                 </h4>
                                 <div onClick={() => scrollTo("waitlist-form")} className="d-flex w-full lg:w-auto cursor-pointer">
                                     <Button
                                         text="Join the Waitlist"
                                         variant="lg"
-                                        bg="#2C7FFF"
+                                        bg="#365314"
                                         color="#FFFFFF"
                                         hoverBg="#101010"
                                         boxShadow="1px 2px 24px 0px #13245733"
@@ -722,13 +751,19 @@ const WaitlistPage: FC = () => {
             <section id="waitlist-form" className="scroll-mt-[100px]">
                 <Container>
                     <div className="pb-y md:py-[70px]">
-                        <div className="form-content rounded-3xl border-2 border-[#2C7FFF] py-8 px-6 md:px-[50px] lg:py-[70px] lg:px-[100px] relative bg-[url('/form-bg.svg')] bg-contain bg-center bg-no-repeat flex flex-col gap-8 md:flex-row md:gap-[50px] ">
+                        <div className="form-content rounded-3xl border-2 border-[#1a2e05] py-8 px-6 md:px-[50px] lg:py-[70px] lg:px-[100px] relative bg-[url('/form-bg.svg')] bg-contain bg-center bg-no-repeat flex flex-col gap-8 md:flex-row md:gap-[50px] ">
                             <div className="flex flex-col gap-1 md:gap-2 w-full max-w-[426px] ">
-                                <div className="w-max py-1.5 px-3 bg-[#C5E3FF] backdrop-blur-sm rounded-3xl">
-                                    <Typography variant="chip" weight={600} lineHeight={isMd ? 20 : 16} className="text-blue-500">
+                                <div className="w-max py-1.5 px-3 bg-[#d9f99d] backdrop-blur-sm rounded-3xl">
+                                    <Typography
+                                        variant="chip"
+                                        weight={600}
+                                        lineHeight={isMd ? 20 : 16}
+                                        className="text-[#1a2e05]"
+                                    >
                                         EASY CHARGING, EVERY TIME
                                     </Typography>
                                 </div>
+
                                 <div className="flex flex-col gap-2 md:gap-3">
                                     <Typography variant="h2" weight={600} lineHeight={isMd ? 45 : 36} className="text-black-900">
                                         Reserve Your Charging Spot on the Waitlist
@@ -815,13 +850,14 @@ const WaitlistPage: FC = () => {
                                         <Button
                                             text="Submit"
                                             variant="lg"
-                                            bg="#2C7FFF"
+                                            bg="#365314"
                                             color="#FFFFFF"
                                             hoverBg="#101010"
                                             boxShadow="1px 2px 24px 0px #13245733"
                                             className="w-full"
                                             type="submit"
                                         />
+
                                     </div>
                                 </form>
                             </div>

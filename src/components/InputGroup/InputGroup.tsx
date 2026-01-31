@@ -16,13 +16,13 @@ const InputGroup: React.FC<InputGroupProps> = ({ placeholder = "Your name", type
   const [value, setValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  const strokeColor = isFocused || value ? "#19398F" : "#727272";
+  const strokeColor = isFocused || value ? "#365314" : "#727272";
 
   return (
     <div className="flex flex-col gap-1">
       {/* Wrapper */}
       <div
-        className={`py-[15px] px-[18px] md:p-[18px] border-[1.5px] rounded-xl flex gap-2.5 items-center ${error ? "border-red-500" : "border-[#BCDCFF]"
+        className={`py-[15px] px-[18px] md:p-[18px] border-[1.5px] rounded-xl flex gap-2.5 items-center ${error ? "border-red-500" : "border-[#365314]"
           }`}
       >
         <div className="min-w-5">
@@ -34,7 +34,7 @@ const InputGroup: React.FC<InputGroupProps> = ({ placeholder = "Your name", type
           {...register} // RHF registration
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          className="placeholder:text-[#727272] placeholder:text-[16px] [@media(max-width:390px)]:placeholder:text-[12px] outline-none text-blue-900 flex-1"
+          className="placeholder:text-[#727272] placeholder:text-[16px] [@media(max-width:390px)]:placeholder:text-[12px] outline-none text-lime-900 flex-1"
         />
       </div>
 
